@@ -1,0 +1,31 @@
+//Publication date extraction:
+
+var item = $(".item");
+var div = item.children().eq(1);
+var span1=div.children("span");
+var span2 = span1.children("span:first-child");
+var publication_date = span2.children("font").text();
+publication_date;
+
+
+//binding_date extraction
+var item = $(".item");
+var div = item.children().eq(1);
+var span1=div.children("span");
+var span2 = span1.children("span").eq(5);
+var binding_date = span2.children("font").text();
+binding_date;
+
+
+//object extraction
+var item = $(".item");
+var div = item.children().eq(1);
+var span1=div.children("span");
+var p = span1.children("p");
+var object = p.children("font").text();
+object;
+
+//grtting all links
+jQuery('a').each( function() { 
+console.log( jQuery(this).attr('href') );
+});
